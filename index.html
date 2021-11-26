@@ -8,7 +8,7 @@
         background-repeat: repeat;
     }
 
-    div {
+    .mainbox {
         background-image: url("images/ugly.jpg");
         margin: 20px;
         padding: 10px;
@@ -17,13 +17,21 @@
 </head>
 <body>
     <img src=images/welcome.png>
-    <div>
-        <p>Hello World!</p>
-        <p>Hello World!</p>
-    </div>
-    <div>
-        <p>Hello World!</p>
-        <p>Hello World!</p>
+    <div style="width: 100%; overflow: hidden">
+        <div style="width: 600%; float: left;">
+            <div class=mainbox>
+                <p>Hello World!</p>
+                <p>Welcome to my Web Site.</p>
+            </div>
+            <div class=mainbox>
+                <p>Hello World!</p>
+                <p>Hello World!</p>
+            </div>
+        </div>
+        <div style="margin-left: 620%">
+            <p style="color: white;">HI!!!</p>
+            <img src=i-love-the-2000s.jpg>
+        </div>
     </div>
 </body>
 </html>
