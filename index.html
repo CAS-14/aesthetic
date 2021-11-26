@@ -16,7 +16,7 @@
     }
     </style>
     <script>
-    function playMusic() {
+    function musicToggle() {
         var audio = document.getElementById("bgmusic")
         if (audio.currentTime > 0) {
             audio.pause();
@@ -29,11 +29,11 @@
 </head>
 <body>
     <img src=images/welcome.png>
-    <a href="#" style="color:aqua" onclick="playMusic()">play music</a>
+    <a href="#" style="color:aqua" onclick="musicToggle()">play music</a>
     <audio src="647.m4a" id="bgmusic"></audio>
     <div style="width: 100%; overflow: hidden; margin: 20px">
         <div>
-            <img src=images/buttons/eyes.gif>
+            <a href=<img src=images/buttons/eyes.gif>
             <img src=images/buttons/dk64.gif>
             <img src=images/buttons/despacito.gif>
             <img src=images/buttons/angelfire.gif>
@@ -51,7 +51,7 @@
         </div>
         <div style="margin-left: 62%">
             <p style="color: white;">HI!!!</p>
-            <img src=images/i-love-the-2000s.jpg>
+            <img src=images/i-love-the-2000s.jpg width=50% height=50%>
         </div>
     </div>
 </body>
