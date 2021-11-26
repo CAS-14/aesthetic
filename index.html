@@ -17,12 +17,14 @@
     </style>
     <script>
     function playMusic() {
-        var audio = document.createElement("audio");
+        //var audio = document.createElement("audio");
         var src = document.createElement("source");
+        var audio = document.getElementById("bgmusic")
         src.src = "647.m4a"
+        audio.pause();
+        audio.currentTime = 0;
         audio.appendChild(src);
         audio.play();
-        audo.
         // e.preventDefault();
     }
     </script>
@@ -30,6 +32,7 @@
 <body>
     <img src=images/welcome.png>
     <a href="#" style="color:aqua" onclick="playMusic()">play music</a>
+    <audio src="647.m4a" id="bgmusic"></audio>
     <div style="width: 100%; overflow: hidden; margin: 20px">
         <div>
             <img src=images/buttons/eyes.gif>
