@@ -15,10 +15,20 @@
         padding: 10px;
     }
     </style>
+    <script>
+    function playMusic() {
+        var audio = document.createElement("audio");
+        var src = document.createElement("source");
+        src.src = "647.m4a"
+        audio.appendChild(src);
+        audio.play();
+        // e.preventDefault();
+    }
+    </script>
 </head>
 <body>
     <img src=images/welcome.png>
-    <a href="647.m4a" style="color:aqua">play music</a>
+    <a href="647.m4a" style="color:aqua" onclick="playMusic()">play music</a>
     <div style="width: 100%; overflow: hidden; margin: 20px">
         <div>
             <img src=images/buttons/eyes.gif>
