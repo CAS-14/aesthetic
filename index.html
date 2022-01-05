@@ -23,6 +23,7 @@
     <script>
     function musicToggle() {
         var audio = document.getElementById("bgmusic")
+        audio.volume = 0.2;
         if (audio.currentTime > 0) {
             audio.pause();
             audio.currentTime = 0;
