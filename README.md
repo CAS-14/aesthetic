@@ -1,3 +1,3 @@
 # aesthetic website thing
 
-can be viewed at z.act25.com
+can be viewed at 90.act25.com
