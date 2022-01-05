@@ -3,13 +3,6 @@
 <head>
     <title>Happy 2001!</title>
     <style>
-    html { min-height: 100%; overflow-x: hidden !important;}
-
-    .container {
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-    }
-
     body {
         background-image: url("images/background.png");
         background-repeat: repeat;
@@ -17,43 +10,41 @@
         overflow-x: hidden !important;
     }
 
+    .boxin {
+        display: flex;
     
-
-    div.mainbox {
-        background-image: url("images/ugly.jpg");
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: 10px;
     }
 
-    .smalltext {
-        font-size: 8pt;
-        color: lime;
+    .boxout {
+        display: flex;
+        flex-grow: 10;
+        align-items: stretch;
     }
     </style>
-    <script>
-    function musicToggle() {
-        var audio = document.getElementById("bgmusic")
-        audio.volume = 0.2;
-        if (audio.currentTime > 0) {
-            audio.pause();
-            audio.currentTime = 0;
-        } else {
-            audio.play();
-        }
-    }
-    </script>
 </head>
 <body>
     <a href="#" style="color:aqua" onclick="musicToggle()">play music</a>
     <audio src="prettycvnt.m4a" id="bgmusic"></audio>
-    <div style="width:60%; margin:auto; background:#778959; border-width: 10px; border:black; height:100%; padding:10px">
-        <div style="height:120px; margin-top:30px; background:gray; border-bottom:lightgreen; border-width:10px">
+    <div class=boxout style="width:60%; margin:auto; background:#778959; border-width: 10px; border:black; height:100%; padding:10px">
+        <div class=boxin style="height:120px; margin-top:30px; background:gray; border-bottom:lightgreen; border-width:10px">
             <p>navigation bar here</p>
         </div>
-        <div style="background:beige; margin:10px; border:mintcream; border-width:1px; height:auto;">
-            <p>page content here</p>>
+        <div class=boxin style="background:beige; margin:10px; border:mintcream; border-width:1px; height:auto;">
+            <p>page content here</p>
+            
         </div>
     </div>
+    <script>
+        function musicToggle() {
+            var audio = document.getElementById("bgmusic")
+            audio.volume = 0.2;
+            if (audio.currentTime > 0) {
+                audio.pause();
+                audio.currentTime = 0;
+            } else {
+                audio.play();
+            }
+        }
+    </script>
 </body>
 </html>
